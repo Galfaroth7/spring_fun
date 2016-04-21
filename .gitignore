@@ -1,6 +1,10 @@
 # gradle
-
 .gradle/
 gradle*
+
+# build
 build/
+
+# idea
 .idea/
+*.iml

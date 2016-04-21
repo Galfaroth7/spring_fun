@@ -1,4 +1,4 @@
-package hello;
+package com.pwpik.cheese;
 
 import javax.persistence.*;
 
