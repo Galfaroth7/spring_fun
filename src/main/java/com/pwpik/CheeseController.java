@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CheeseController {
 
-    CheeseService service;
+    private final CheeseService service;
 
     @Autowired
     CheeseController(CheeseService service) {
