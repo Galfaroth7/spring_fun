@@ -1,8 +1,8 @@
-spring:
-    datasource:
-        driverClassName: com.mysql.jdbc.Driver
-        url: jdbcurl # jdbc:mysql://localhost:3306/chipdale
-        username: username
-        password: password
-    jpa:
-        database: mysql
+#spring:
+#    datasource:
+#        driverClassName: com.mysql.jdbc.Driver
+#        url: jdbcurl # jdbc:mysql://localhost:3306/chipdale
+#        username: username
+#        password: password
+#    jpa:
+#        database: mysql
