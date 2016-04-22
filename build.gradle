@@ -28,3 +28,7 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+task wrapper2(type: Wrapper) {
+    gradleVersion = '2.3'
+}
