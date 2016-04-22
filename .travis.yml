@@ -1,0 +1,12 @@
+language: java
+jdk:
+- oraclejdk8
+deploy:
+  provider: openshift
+  user: m.ostapowicz@stud.elka.pw.edu.pl
+  password:
+    secure: HYg7wjo8ULVQOkmnhtFdEHk5Sn2L6nh1PSGctUVPlEoUSd1sSCh6NlX0yDLxzouTmE4uLj8/8R3k60X1jC71urTFMYM9rDFPqZkgk/kwOy4Lpkxgy8+6V1GUZfDl+POARXs14ZxsO9E1JQi97HLZi+TuXcAWZYUK/CfDhljssr9IYi3libJ1MUT+cg587y6vwg5TAtowtRNqHTLkbHG6MlSRB0yTyyguNxQDsbJb3dIb4r5rPTGdu9csLd4ZbapRv9BZl296i9ui+RJC7g973aNlKYdYjO/R2yst+/9FmPxTJUV3QjYN1Az12CcTanzbmhH79isKOPTwIGlf7sVsXMKaP5usKTfiHnD9wDaEbLf1GgK6ldLEM2v2v8oTiGZiRuDeIz0OwSrcnB/yeEeCZ79DnDsUqtSxSUfb0d/zjIuP3bKr+q0IHzcig3J4H6DYHU6YFxL0aJuLo3sZlqXKcnVF5hN9jz3sd7xVhR8vkQ8yV91QcVWpucBhHBCMuupPsSntgkgA/2FfjNNaGDBV0rwgrIOefPp1qQDSH7tLHKsxVdXMqcrTaFORE/xeC/bsjuq2I8vwkvTfDAsLG1ocwroXLdrvVoGrtaRH+zXJPiyZQ+0ckaKPMaJKlggXPMR/nkHtk0bhL/Q8ouH0tr7OS1s42i9+gytyczjL5SbVqDk=
+  app: chipanddale
+  domain: chipanddale-pwprojects.rhcloud.com
+  on:
+    repo: Galfaroth7/spring_fun
