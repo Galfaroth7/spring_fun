@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 
 cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 echo -n "start"
