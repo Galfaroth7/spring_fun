@@ -11,7 +11,9 @@ cp -r $OPENSHIFT_REPO_DIR/src $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 cp $OPENSHIFT_REPO_DIR/settings.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 cp $OPENSHIFT_REPO_DIR/build.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 ./gradle build -x test
-cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 echo -n "start"
+cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin/build/libs
 #gradle build
-java -Xms384m -Xmx496m -jar build/libs/*.jar --server.port=${OPENSHIFT_DIY_PORT} --server.address=${OPENSHIFT_DIY_IP} &
+cp *.jar $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
+cd $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
+./java -Xms384m -Xmx496m -jar *.jar --server.port=${OPENSHIFT_DIY_PORT} --server.address=${OPENSHIFT_DIY_IP} &
