@@ -1,0 +1,12 @@
+#!/bin/bash
+set -x
+echo -n "build"
+cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin
+rm -rf src
+rm -rf build.gradle
+rm -rf settings.gradle
+cp -r $OPENSHIFT_REPO_DIR/src $OPENSHIFT_DATA_DIR/gradle-2.12/bin
+cp $OPENSHIFT_REPO_DIR/settings.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
+cp $OPENSHIFT_REPO_DIR/build.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
+./gradle build -x test
+
