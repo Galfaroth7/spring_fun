@@ -7,12 +7,14 @@ cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 rm -rf src
 rm -rf build.gradle
 rm -rf settings.gradle
+rm -rf build
 cp -r $OPENSHIFT_REPO_DIR/src $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 cp $OPENSHIFT_REPO_DIR/settings.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 cp $OPENSHIFT_REPO_DIR/build.gradle $OPENSHIFT_DATA_DIR/gradle-2.12/bin
 ./gradle build -x test
 echo -n "start"
 cd $OPENSHIFT_DATA_DIR/gradle-2.12/bin/build/libs
+rm -f *.jar
 #gradle build
 cp *.jar $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
 cd $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
