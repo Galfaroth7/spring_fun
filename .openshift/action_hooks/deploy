@@ -16,5 +16,5 @@ echo -n "start"
 cd $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
 rm -f *.jar
 #gradle build
-cp *.jar $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
+cp $OPENSHIFT_DATA_DIR/gradle-2.12/bin/build/libs/*.jar $OPENSHIFT_DATA_DIR/jdk1.8.0_91/bin
 ./java -Xms384m -Xmx496m -jar *.jar --server.port=${OPENSHIFT_DIY_PORT} --server.address=${OPENSHIFT_DIY_IP} &
