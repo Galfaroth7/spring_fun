@@ -2,7 +2,8 @@
 .gradle/
 gradle*
 
-#something
+# build
+build/
 
 # idea
 .idea/

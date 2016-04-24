@@ -1,7 +1,6 @@
-function Cheese($scope, $http) {
-    $http.get('http://localhost:8080/displayfirst').
+function Stash($scope, $http) {
+    $http.get('http://localhost:8080/display').
         success(function(data) {
-            console.log(data);
-            $scope.cheese = data;
+            $scope.stashes = data;
         });
 }
